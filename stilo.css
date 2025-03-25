@@ -1,14 +1,21 @@
 
+
 .imagen{
     background-image: url(imagenes/ca7d6a4f6887b0a306273f7b2126ad2e.jpg); /*Con esto ingresamos una imagen en un div*/
     width: 500px;
     height: 600px;
     background-size: cover; /*Con esto hacemos que la imagen este lo mas completa posible*/
     background-position: center; /*con esto elegimos la posicion de la imagen*/
-    margin: 0% auto; /*Con esto le agregamos un marge a la imagen*/
+    margin: 0% ; /*Con esto le agregamos un margen a la imagen*/
     border:solid;
+    background-attachment: scroll;
 }
 
-body{
-    background-image: url(imagenes/Captura\ de\ pantalla\ 2024-11-26\ 154552.png); /*con esto ponemos la imagen como un fondo del body*/
+
+
+.gradient{
+    width: 600px; /*con esto modificamos el ancho*/
+    height: 200px; /*con esto modificamos el largo*/
+    background: linear-gradient(blue,red,green); /*con esto generamos los colores tipo rgb*/
+    border: solid;
 }
