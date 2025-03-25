@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <a href="">ferney es</a> <!--Se crea un link-->
+    </nav>
+    <!--Se utiliza la etiqueta stile para asignarle un estilo a (nav - a) quitandole la linea de subrayado y cambiandole el color-->
+    <style>
+        nav a {
+            text-decoration: none;
+            color:brown;
+        }
+    </style>
+
+    <div> <!--Utizamos div para ingresar otro link-->
+        <a href="https://drive.google.com/file/d/1eKCRzZNxvWs4qo_3W8ds7r43M-rBcxku/view">Ejemplo</a>
+    </div>
+    <!--Asignamos con style que (a con un href que contenga un "https") cambie el color de la letra a verde-->
+    <!--la forma en la que se selececciona es por el atributo-->
+    <style>
+        a[href^="https"]{
+            color:green;
+        }
+    </style>
+
+    <div>
+        <p>HOLA COMO ESTAS</p><!--Ingresamos un parrafo que se modificara por ser "hijo directo" de la etiqueta div-->
+    </div>
+    <!--Los que sean hijos directos de div y sea p se les aplica el color rojo-->
+    <style>
+        div > p{
+            color:red;
+        }
+    </style>
+
+    <h1>Un titulo pretencioso</h1>
+
+    <p>Un hermano parrafo adjasente (se aplica el estilo)</p>
+
+    <p>un parrafo hermano no adjasente (no se aplica el estilo)</p>
+    <!--aqui tomamos el primer p despues de un h1 y le cambiamos el stilo-->
+    <style>
+        h1 + p{
+            font-style: italic;
+        }
+    </style>
+
+<section>
+    <h2>otro titulo</h2>
+
+    <p>Un hermano parrafo 1 (no aplica el estilo)</p>
+
+    <p id="nombre">un parrafo hermano 2 (se aplica el estilo por medio de id)</p>
+    <!--aqui tomamos el id de el segundo parrafo para aplicar el stilo sin aplicarselo tambien al primer p-->
+    <style>
+        #nombre {
+            font-style:italic;
+        }
+    </style>
+</section>
+
+</body>
+</html>

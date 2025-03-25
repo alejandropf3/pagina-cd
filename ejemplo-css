@@ -1,0 +1,50 @@
+h1{
+    color: red;
+}
+
+div{
+    border-style:solid; /*Esto es el tipo de border*/
+    border-width: 5px; /*esto es el grosor del borde*/
+    border-top-color: blue; /*Este es el color de borde superior individual*/
+    border-bottom-color: red; /*Este es el color del borde inferior individual*/
+    border-right-color: green;/*Este es el color del borde derecho individual*/
+    border-left-color: yellow;/*Este es el color del borde izquierdo individual*/
+    border-radius: 20px; /*Este se utiliza para el radio de las esquinas*/
+    box-shadow: 8px 8px 10px; /*Sirve para agregarle una sombra a una caja*/
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100px;
+}
+
+p{
+
+    /*Color tipo rgb*/
+    color : rgb(red, green, blue);
+    /*Color rgba*/
+    color:rgba(255, 255, 255, 0.5); /*Con el color Rgba podemos modificar la transparencia del color. En la ultima opcion si (con 0 el color es transparente) (con 1 el color es opaco)*/
+    /*color hexadecimal*/
+    color: hsl(red, 50, 50);
+}
+
+.texto{
+    color:hsl(120, 100%, 50%);
+    color:hsla(0, 0%, 20%, 20%)
+}
+
+.imagen{
+    background-image: url(imagenes/ca7d6a4f6887b0a306273f7b2126ad2e.jpg); /*Con esto ingresamos una imagen en un div*/
+    width: 500px;
+    height: 600px;
+    background-size: cover; /*Con esto hacemos que la imagen este lo mas completa posible*/
+    background-position: center; /*con esto elegimos la posicion de la imagen*/
+    margin: 0% auto; /*Con esto le agregamos un marge a la imagen*/
+    border:solid;
+}
+
+body{
+    background-image: url(imagenes/Captura\ de\ pantalla\ 2024-11-26\ 154552.png); /*con esto ponemos la imagen como un fondo del body*/
+}
